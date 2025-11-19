@@ -4,7 +4,7 @@ export default function Login() {
       <div className="bg-[#CEC1A8] p-10 rounded-xl shadow-xl w-80 border border-[#B59E7D]">
 
         <h1 className="text-center text-[#584738] text-3xl mb-6">
-          Login
+          Iniciar Sesion 
         </h1>
 
         <form className="flex flex-col gap-4">
