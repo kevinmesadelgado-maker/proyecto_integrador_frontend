@@ -1,0 +1,84 @@
+.footer {
+  background-color: #B59E7D; /* similar al verde de la imagen */
+  color: black;
+  padding: 20px 30px;
+}
+
+.container {
+  max-width: 1300px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+/* IZQ SECTION */
+.Izq h3 {
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.Izq p {
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.email {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.phone {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* SOCIAL SECTION */
+.social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  padding: 20px 40px;
+  border-left: 3px solid black;
+  border-right: 3px solid black;
+}
+
+.icon {
+  width: 45px;
+  height: 45px;
+  background: black;
+  border-radius: 50%;
+}
+
+/* DERECH SECTION */
+.Derech {
+  text-align: center;
+}
+
+.Derech h3 {
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+}
+
+.Derech p {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+/* BOTTOM BAR */
+.bottom {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  opacity: 0.7;
+}
