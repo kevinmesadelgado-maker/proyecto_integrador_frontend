@@ -1,8 +1,7 @@
-
 .footer {
-  background-color: #B59E7D; /* similar al verde de la imagen */
-  color: black;
-  padding: 20px 30px;
+  background: linear-gradient(135deg, #0b0b0f, #1a1a24); /* Negro carbón + azul oscuro */
+  color: #eaeaf5; /* Texto claro y suave */
+  padding: 40px 30px;
 }
 
 .container {
@@ -14,52 +13,54 @@
   align-items: start;
 }
 
-/* IZQ SECTION */
+/* IZQUIERDA */
 .Izq h3 {
   font-weight: bold;
   letter-spacing: 1px;
   margin-bottom: 20px;
   text-align: center;
+  color: #5a5a63; /* Gris oscuro */
 }
 
 .Izq p {
   margin-bottom: 5px;
   text-align: center;
+  color: #cfcfe8; 
 }
 
-.email {
-  display: block;
-  font-size: 14px;
-  margin-bottom: 20px;
-  text-align: center;
-}
-
+.email,
 .phone {
   display: block;
   font-size: 14px;
   margin-bottom: 20px;
   text-align: center;
+  color: #ffffff;
 }
 
-/* SOCIAL SECTION */
+/* SOCIAL — CENTRO BRILLANTE */
 .social {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 25px;
   padding: 20px 40px;
-  border-left: 3px solid black;
-  border-right: 3px solid black;
+
+  border-left: 2px solid #ffffffcc;  /* Blanco brillante translúcido */
+  border-right: 2px solid #ffffffcc;
+
+  background: rgba(255, 255, 255, 0.05); /* toque de brillo detrás */
+  backdrop-filter: blur(3px); /* efecto vidrio */
 }
 
 .icon {
   width: 45px;
   height: 45px;
-  background: black;
+  background: #ffffff; /* Blanco puro */
   border-radius: 50%;
+  box-shadow: 0 0 15px #ffffffaa;  /* glow blanco */
 }
 
-/* DERECH SECTION */
+/* DERECHA */
 .Derech {
   text-align: center;
 }
@@ -68,11 +69,13 @@
   font-weight: bold;
   letter-spacing: 1px;
   margin-bottom: 5px;
+  color: #5a5a63; /* Gris oscuro */
 }
 
 .Derech p {
   font-size: 14px;
   margin-bottom: 20px;
+  color: #d6d6f2;
 }
 
 /* BOTTOM BAR */
@@ -81,5 +84,6 @@
   display: flex;
   justify-content: space-between;
   font-size: 12px;
-  opacity: 0.7;
+  opacity: 0.85;
+  color: #eaeaf5;
 }

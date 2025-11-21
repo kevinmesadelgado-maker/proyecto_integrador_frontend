@@ -4,7 +4,7 @@ import { ExpandableCardDemo } from "@/features/products/expandable-card-demo-gri
 export default function ProductsPage() {
   return (
     <div>
-      <h1 className="text-2xl font-semibold">Productos</h1>
+      <h1 className="text-2xl font-semibold">Categorias</h1>
   <ExpandableCardDemo />
     </div>
   );
