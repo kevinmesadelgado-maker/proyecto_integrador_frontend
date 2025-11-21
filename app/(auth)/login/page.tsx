@@ -1,9 +1,8 @@
-import Login from "./Login";
+import RootLayout from "./Login";
 
-export default function LoginPage() {
+export default function page() {
   return (
     <>
-      <Login />
     </>
-  );
+  )
 }
