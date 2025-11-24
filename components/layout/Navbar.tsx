@@ -11,10 +11,10 @@ import {
 
 export default function Navbar() {
   return (
-    <nav className="flex items-center justify-between px-8 py-4 bg-[#B59E7D] border-b border-[#584738] shadow-md font-serif">
+    <nav className="flex items-center justify-between px-8 py-8 bg-black border-b border-black-900 shadow-md font-BebasNeue uppercase font-bold">
 
       {/* Logo */}
-      <h1 className="text-[#F1EADA] text-2xl font-bold tracking-wide">
+      <h1 className="text-white text-2xl font-bold tracking-wide">
         MiTienda
       </h1>
 
@@ -24,14 +24,13 @@ export default function Navbar() {
         {/* Links normales */}
         {[
           { href: "/", label: "Inicio" },
-          { href: "/products", label: "Productos" },
-          { href: "/dashboard", label: "Dashboard" },
+          
         ].map((item) => (
           <Link
             key={item.href}
             href={item.href}
             className="
-              text-[#F1EADA]
+              text-white
               px-4 py-2
               rounded-lg
               transition 
@@ -39,8 +38,8 @@ export default function Navbar() {
               duration-200
               hover:scale-110
               hover:shadow-md
-              hover:bg-[#CEC1A8]
-              hover:text-[#584738]
+              hover:bg-white
+              hover:text-black
             "
           >
             {item.label}
@@ -54,13 +53,14 @@ export default function Navbar() {
           <SignInButton mode="modal">
             <button
               className="
-                text-[#F1EADA]
+                text-white
                 px-4 py-2
                 rounded-lg
                 transition
-                hover:bg-[#CEC1A8]
-                hover:text-[#584738]
+                hover:bg-white
+                hover:text-black
                 hover:scale-105
+                uppercase
               "
             >
               Iniciar sesión
@@ -71,11 +71,13 @@ export default function Navbar() {
           <SignUpButton mode="modal">
             <button
               className="
-                text-[#F1EADA]
+                text-white
                 px-4 py-2
                 rounded-lg
                 transition
-                hover:bg-[#CEC1A8]
+                hover:bg-white
+                hover:text-black
+                uppercase
                 hover:scale-105
               "
             >
