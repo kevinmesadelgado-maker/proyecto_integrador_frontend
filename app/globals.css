@@ -122,6 +122,18 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
+  
+   position: relative;
+  }
+
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55); /* Oscurece la imagen */
+    z-index: -1; /* Para que no tape tu contenido */
+    backdrop-filter: brightness(0.7); /* Más profesional */
   }
 }
 

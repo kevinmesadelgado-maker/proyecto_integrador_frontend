@@ -6,9 +6,6 @@ export default function page() {
     
     <section className="relative h-screen w-full flex items-center justify-center">
 
-      {/* Capa negra*/}
-      <div className="absolute inset-0 bg-black/40"></div>
-
       {/* Gradiente en la parte inferior */}
       <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-black/80"></div>
 
@@ -20,7 +17,7 @@ export default function page() {
           house of artists
         </h1>
 
-        {/* Subtítulo elegante */}
+        {/* Subtítulo */}
         <p className="mt-6 text-xl md:text-2xl text-gray-200 tracking-widest font-Bebasneue italic font-bold uppercase">
           donde la creatividad cobra vida
         </p>

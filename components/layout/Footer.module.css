@@ -11,6 +11,7 @@
   grid-template-columns: 1fr auto 1fr;
   gap: 40px;
   align-items: start;
+  font-family: "Bebas Neue", sans-serif;
 }
 
 /* IZQUIERDA */
@@ -25,7 +26,7 @@
 .Izq p {
   margin-bottom: 5px;
   text-align: center;
-  color: #cfcfe8; 
+  color: #e3e3ed; 
 }
 
 .email,
@@ -44,20 +45,16 @@
   align-items: center;
   gap: 25px;
   padding: 20px 40px;
-
   border-left: 2px solid #ffffffcc;  /* Blanco brillante translúcido */
   border-right: 2px solid #ffffffcc;
-
-  background: rgba(255, 255, 255, 0.05); /* toque de brillo detrás */
-  backdrop-filter: blur(3px); /* efecto vidrio */
 }
 
 .icon {
   width: 45px;
   height: 45px;
-  background: #ffffff; /* Blanco puro */
+  background: #949191; 
   border-radius: 50%;
-  box-shadow: 0 0 15px #ffffffaa;  /* glow blanco */
+  
 }
 
 /* DERECHA */
@@ -68,14 +65,14 @@
 .Derech h3 {
   font-weight: bold;
   letter-spacing: 1px;
-  margin-bottom: 5px;
+  margin-bottom: 3px;
   color: #5a5a63; /* Gris oscuro */
 }
 
 .Derech p {
   font-size: 14px;
   margin-bottom: 20px;
-  color: #d6d6f2;
+  color: #e3e3ed;
 }
 
 /* BOTTOM BAR */
@@ -85,5 +82,5 @@
   justify-content: space-between;
   font-size: 12px;
   opacity: 0.85;
-  color: #eaeaf5;
+  color: #eaeaf536;
 }
