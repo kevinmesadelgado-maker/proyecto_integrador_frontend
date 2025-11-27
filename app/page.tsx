@@ -24,7 +24,7 @@ export default function page() {
 
         {/* Botón  */}
         <a
-          href="/products"
+          href="/categories"
           className="
             inline-block mt-10 px-10 py-4 
             border border-white/40 
@@ -34,7 +34,7 @@ export default function page() {
             hover:bg-white hover:text-black hover:shadow-2xl
             font-BebasNeue         "
         >
-          Explorar Productos
+          Explorar categorias
         </a>
       </div>
     </section>
