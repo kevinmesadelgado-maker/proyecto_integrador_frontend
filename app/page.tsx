@@ -7,7 +7,7 @@ export default function page() {
     <section className="relative h-screen w-full flex items-center justify-center">
 
       {/* Gradiente en la parte inferior */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-black/80"></div>
+      <div className="absolute inset-0 bg-linear-to-b from-black/30 via-transparent to-black/80"></div>
 
       {/* Contenido */}
       <div className="relative text-center px-6 animate-fade-up">
@@ -38,9 +38,6 @@ export default function page() {
         </a>
       </div>
     </section>
-
-
-
     </>
   )
 }

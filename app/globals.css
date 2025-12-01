@@ -137,3 +137,95 @@
   }
 }
 
+.card-flip {
+  overflow: visible;
+  width: 190px;
+  height: 254px;
+}
+
+.content-flip {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 300ms;
+  box-shadow: 0px 0px 10px 1px #000000ee;
+  border-radius: 5px;
+}
+
+.front-flip {
+  transform: rotateY(0deg); 
+  backface-visibility: hidden; 
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: #111; /* negro suave */
+}
+
+/* Lado Trasero */
+.back-flip {
+  transform: rotateY(180deg);
+  backface-visibility: hidden; 
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: #111; /* negro suave */
+}
+
+/* Hover Flip */
+.card-flip:hover .content-flip {
+  transform: rotateY(180deg);
+}
+
+/* Borde giratorio elegante en escala de grises */
+.back-flip::before {
+  position: absolute;
+  content: ' ';
+  display: block;
+  width: 160px;
+  height: 160%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    #ffffffaa,
+    #cccccc,
+    #ffffffaa,
+    transparent
+  );
+  animation: rotation-border 5000ms infinite linear;
+}
+
+/* Círculos decorativos en blanco y gris */
+.circle.right-pos {
+  background-color: #e5e5e5;
+  left: 160px;
+  top: -80px;
+  width: 30px;
+  height: 30px;
+  animation-delay: -1800ms;
+}
+
+.circle.bottom-pos {
+  background-color: #bfbfbf;
+  left: 50px;
+  top: 0px;
+  width: 150px;
+  height: 150px;
+  animation-delay: -800ms;
+}
+
+.circular-gallery {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  cursor: grab;
+}
+
+.circular-gallery:active {
+  cursor: grabbing;
+}
