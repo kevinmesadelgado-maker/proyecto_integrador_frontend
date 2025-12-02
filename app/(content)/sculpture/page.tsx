@@ -6,6 +6,7 @@ import { useEffect, useState } from 'react';
 import { sculpturesService } from '@/services/sculpturesServices'; 
 import type { sculpture } from '@/types/sculpture'; 
 import { SculptureFlipCard } from '@/components/ui/sculptureFlipCard '; 
+import Link from "next/link";
 
 export default function SculpturesPage() {
   const [sculpturesData, setSculpturesData] = useState<sculpture[]>([]);
@@ -51,6 +52,14 @@ export default function SculpturesPage() {
         <h1 className="text-4xl font-bold text-gray-950 mb-12 text-center">
           Galería de esculturas
         </h1>
+         {/*  BOTÓN VOLVER A CATEGORÍAS */}
+      <div className="mb-12 w-full flex justify-start">
+        <Link
+          href="/categories"
+          className="px-4 py-2 bg-white text-black font-semibold rounded-lg shadow hover:bg-gray-200 transition">
+          ← Volver
+        </Link>
+      </div>
 
         {sculpturesData.length === 0 ? (
           <p className="text-center text-xl text-gray-500">

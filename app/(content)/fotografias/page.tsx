@@ -6,6 +6,7 @@ import { useEffect, useState } from 'react';
 import { fotografiasService } from '@/services/fotografiasService'; 
 import type { fotografia } from '@/types/fotografia'; 
 import { FotografiaFlipCard } from '@/components/ui/fotografiaFlipCard'; 
+import Link from "next/link";
 
 export default function FotografiasPage() {
   const [fotografiasData, setFotografiasData] = useState<fotografia[]>([]);
@@ -51,6 +52,14 @@ export default function FotografiasPage() {
         <h1 className="text-4xl font-bold text-gray-950 mb-12 text-center">
           Galería de fotografías
         </h1>
+        {/*  BOTÓN VOLVER A CATEGORÍAS */}
+      <div className="mb-12 w-full flex justify-start">
+        <Link
+          href="/categories"
+          className="px-4 py-2 bg-white text-black font-semibold rounded-lg shadow hover:bg-gray-200 transition">
+          ← Volver
+        </Link>
+      </div>
 
         {fotografiasData.length === 0 ? (
           <p className="text-center text-xl text-gray-500">
