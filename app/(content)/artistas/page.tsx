@@ -68,8 +68,8 @@ export default function ArtistasPage() {
   }
 
   return (
-    <div className="py-12 px-4 bg-gray-900 flex flex-col items-center">
-      <h1 className="text-4xl font-extrabold text-white mb-12 text-center border-b pb-4 border-gray-700 max-w-7xl w-full">
+    <div className="py-12 px-4 flex flex-col items-center">
+      <h1 className="text-4xl font-extrabold text-black mb-12 text-center  pb-4  max-w-7xl w-full">
         Artistas
       </h1>
       {/*  BOTÓN VOLVER A CATEGORÍAS */}
