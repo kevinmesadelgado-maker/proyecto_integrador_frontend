@@ -14,9 +14,13 @@ export default function Navbar() {
     <nav className="flex items-center justify-between px-8 py-8 bg-black border-b border-black-900 shadow-md font-BebasNeue uppercase font-bold">
 
       {/* Logo */}
-      <h1 className="text-white text-2xl font-bold tracking-wide">
-        MiTienda
+      <div className="grid grid-cols-2 items-center gap-2"> 
+        <h1 className="text-white text-2xl font-bold tracking-wide">
+        House of Artist
       </h1>
+       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiONa_AtHHSlge6zq1mE8r_0rKGGJVOagNTg&s" alt="avatar" className="   w-10 h-10 rounded-full object-cover"/></div>
+     
+
 
       {/* Menú */}
       <div className="flex items-center gap-4">
